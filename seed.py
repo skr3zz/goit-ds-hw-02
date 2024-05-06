@@ -1,6 +1,6 @@
 from faker import Faker
 from sqlite3 import connect
-from sqlite3 import randint
+from random import randint
 
 from connect import create_connection, database
 
