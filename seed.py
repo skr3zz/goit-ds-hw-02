@@ -18,7 +18,7 @@ def seed_status(conn,count):
     cursor=conn.cursor()
     for _ in range(count):
         name=fake.name()
-        cursor.execute("INSERT INTO status (name) VALUES (?)", (name))
+        cursor.execute("INSERT INTO status (name) VALUES (?)", (name,))
     conn.commit()
 
 def seed_tasks(conn, count, num_users, num_status):
